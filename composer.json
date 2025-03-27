@@ -1,0 +1,25 @@
+{
+    "name": "wpfor/wp-db-seeder",
+    "description": "WordPress CLI commands for database management",
+    "type": "wordpress-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DmitryFor",
+            "email": "dmitryfor@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "fakerphp/faker": "^1.20"
+    },
+    "autoload": {
+        "files": [
+			"wp-seeder-command.php"
+		],
+        "psr-4": {
+            "WPfor\\WpSeeder\\": "src/"
+        }
+    }
+}
