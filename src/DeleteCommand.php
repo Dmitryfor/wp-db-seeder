@@ -34,7 +34,7 @@ class DeleteCommand extends WP_CLI_Command
         }
 
         foreach ( $posts as $post_id ) {
-            wp_delete_post( $post_id );
+            wp_delete_post( $post_id, true );
         }
 
         WP_CLI::success( sprintf( 'Deleted "%d" seeded posts from the post type "%s".', count( $posts ), $post_type ) );
